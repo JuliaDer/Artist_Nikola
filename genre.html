@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Художник Горовой Николай</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="discription" content="Николай Горовой - художник.">
+  <meta name="keywords" content="художник, картины, живопись, живопись маслом на холсте, картины на заказ, Андреевсий спуск.">
+
+  <link rel="icon" href="favicon.ico">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" rel="text/css">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div class="header">
+      <div class="logo"><span style="color: #CC6C06">Xудожник</span>
+        Николай Горовой</div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #cc6c06;">
+
+      <a class="navbar-brand" href="index.html"><img class="brush" src="images/brush.png"></a>
+      <!-- Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="still-life.html">натюрморты</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="scenery.html">пейзажи</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="flowers.html">цветы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="marine.html">марины</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="genre.html">жанровые</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="east.html">восточный мотив</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="grid">
+      <img src="images/Genre/20180305_132659.jpg" alt="genre-img">
+      <img src="images/Genre/angels.jpg" alt="genre-img">
+      <img src="images/Genre/Ave Maria.jpg" alt="genre-img">
+      <img src="images/Genre/Children.jpg" alt="genre-img">
+      <img src="images/Genre/chocolate.jpg" alt="genre-img">
+      <img src="images/Genre/clown1.jpg" alt="genre-img">
+      <img src="images/Genre/Deer.jpg" alt="genre-img">
+      <img src="images/Genre/Eagle.jpg" alt="genre-img">
+      <img src="images/Genre/imageV.jpg" alt="genre-img">
+      <img src="images/Genre/imageV1.jpg" alt="genre-img">
+      <img src="images/Genre/IMG_0971.jpg" alt="genre-img">
+      <img src="images/Genre/lady1.JPG" alt="genre-img">
+      <img src="images/Genre/Wolves.jpg" alt="genre-img">
+      <img src="images/Genre/БлагаяВесть.jpg" alt="genre-img">
+      <img src="images/Genre/БлагаяВесть1.JPG" alt="genre-img">
+      <img src="images/Genre/Веер.jpg" alt="genre-img">
+      <img src="images/Genre/Павлин.jpg" alt="genre-img">
+      <img src="images/Genre/Пикник.JPG" alt="genre-img">
+      <img src="images/Genre/Покаяние.JPG" alt="genre-img">
+      <img src="images/Genre/Самолет.jpg" alt="genre-img">
+      <img src="images/Genre/Цветочница.jpg" alt="genre-img">
+
+    </main>
+
+    <div class="footer">&COPY; Julia Dernovska & Vadym Horovyi 2019 All rights reserved.
+
+    </div>
+
+  </div>
+  <!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      var NavY = $('.navbar').offset().top;
+
+      var stickyNav = function() {
+        var Scrolly = $(window).scrollTop();
+
+        if (Scrolly > NavY) {
+          $('.navbar').addClass('sticky');
+        } else {
+          $('.navbar').removeClass('sticky');
+        }
+      };
+      stickyNav();
+      $(window).scroll(function() {
+        stickyNav();
+      });
+    });
+  </script>
+</body>
+
+</html>
