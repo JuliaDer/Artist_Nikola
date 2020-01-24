@@ -1,3 +1,3 @@
 # Artist_Nikola
 
-** Website for the artist ** [https://art-horovyi.com] Nikola
+# ** Website for the artist ** [Nikola] (https://art-horovyi.com) 
