@@ -20,7 +20,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -68,54 +69,33 @@
     </nav>
 
     <main class="grid">
-      <img src="images/Marines/20141201_121209.jpg" alt="marine-img">
-      <img src="images/Marines/20141201_121347.jpg" alt="marine-img">
-      <img src="images/Marines/20141201_121421.jpg" alt="marine-img">
-      <img src="images/Marines/20141201_121625.jpg" alt="marine-img">
-      <img src="images/Marines/20141202_151118.jpg" alt="marine-img">
-      <img src="images/Marines/20151207_124452.jpg" alt="marine-img">
-      <img src="images/Marines/20151207_124520.jpg" alt="marine-img">
-      <img src="images/Marines/20170210_164100.jpg" alt="marine-img">
-      <img src="images/Marines/20180102_140507.jpg" alt="marine-img">
-      <img src="images/Marines/20180106_115200.jpg" alt="marine-img">
-      <img src="images/Marines/20180108_105528.jpg" alt="marine-img">
-      <img src="images/Marines/20180305_132709.jpg" alt="marine-img">
-      <img src="images/Marines/20180305_132715.jpg" alt="marine-img">
-      <img src="images/Marines/20180922_152724.jpg" alt="marine-img">
-      <img src="images/Marines/20180928_085912.jpg" alt="marine-img">
-      <img src="images/Marines/20180928_094910.jpg" alt="marine-img">
-      <img src="images/Marines/P3221584.JPG" alt="marine-img">
-      <img src="images/Marines/P4029503.JPG" alt="marine-img">
-      <img src="images/Marines/P4029504.JPG" alt="marine-img">
+      <img class="myImg" src="images/Marines/20141201_121209.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20141201_121347.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20141201_121421.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20141201_121625.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20141202_151118.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20151207_124452.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20151207_124520.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20170210_164100.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180102_140507.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180106_115200.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180108_105528.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180305_132709.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180305_132715.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180922_152724.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180928_085912.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/20180928_094910.jpg" alt="marine-img">
+      <img class="myImg" src="images/Marines/P3221584.JPG" alt="marine-img">
+      <img class="myImg" src="images/Marines/P4029503.JPG" alt="marine-img">
+      <img class="myImg" src="images/Marines/P4029504.JPG" alt="marine-img">
     </main>
 
-    <div class="footer">&COPY; Julia Dernovska & Vadym Horovyi 2019 All rights reserved.
+    <div class="footer">&COPY;2019<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Julia Dernovska & Vadym Horovyi. All rights reserved.
 
     </div>
 
   </div>
-  <!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var NavY = $('.navbar').offset().top;
-
-      var stickyNav = function() {
-        var Scrolly = $(window).scrollTop();
-
-        if (Scrolly > NavY) {
-          $('.navbar').addClass('sticky');
-        } else {
-          $('.navbar').removeClass('sticky');
-        }
-      };
-      stickyNav();
-      $(window).scroll(function() {
-        stickyNav();
-      });
-    });
-  </script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
