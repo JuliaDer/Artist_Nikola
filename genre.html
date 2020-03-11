@@ -20,7 +20,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+ <!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -68,57 +69,38 @@
     </nav>
 
     <main class="grid">
-      <img src="images/Genre/20180305_132659.jpg" alt="genre-img">
-      <img src="images/Genre/angels.jpg" alt="genre-img">
-      <img src="images/Genre/Ave Maria.jpg" alt="genre-img">
-      <img src="images/Genre/Children.jpg" alt="genre-img">
-      <img src="images/Genre/chocolate.jpg" alt="genre-img">
-      <img src="images/Genre/clown1.jpg" alt="genre-img">
-      <img src="images/Genre/Deer.jpg" alt="genre-img">
-      <img src="images/Genre/Eagle.jpg" alt="genre-img">
-      <img src="images/Genre/imageV.jpg" alt="genre-img">
-      <img src="images/Genre/imageV1.jpg" alt="genre-img">
-      <img src="images/Genre/IMG_0971.jpg" alt="genre-img">
-      <img src="images/Genre/lady1.JPG" alt="genre-img">
-      <img src="images/Genre/Wolves.jpg" alt="genre-img">
-      <img src="images/Genre/БлагаяВесть.jpg" alt="genre-img">
-      <img src="images/Genre/БлагаяВесть1.JPG" alt="genre-img">
-      <img src="images/Genre/Веер.jpg" alt="genre-img">
-      <img src="images/Genre/Павлин.jpg" alt="genre-img">
-      <img src="images/Genre/Пикник.JPG" alt="genre-img">
-      <img src="images/Genre/Покаяние.JPG" alt="genre-img">
-      <img src="images/Genre/Самолет.jpg" alt="genre-img">
-      <img src="images/Genre/Цветочница.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/20180305_132659.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/angels.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Ave Maria.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Children.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/chocolate.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/clown1.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Deer.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Eagle.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/imageV.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/imageV1.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/IMG_0971.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/lady1.JPG" alt="genre-img">
+      <img class="myImg" src="images/Genre/Wolves.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/БлагаяВесть.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/БлагаяВесть1.JPG" alt="genre-img">
+      <img class="myImg" src="images/Genre/Веер.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Павлин.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Пикник.JPG" alt="genre-img">
+      <img class="myImg" src="images/Genre/Покаяние.JPG" alt="genre-img">
+      <img class="myImg" src="images/Genre/Самолет.jpg" alt="genre-img">
+      <img class="myImg" src="images/Genre/Цветочница.jpg" alt="genre-img">
 
     </main>
 
-    <div class="footer">&COPY; Julia Dernovska & Vadym Horovyi 2019 All rights reserved.
+    <div class="footer">&COPY; 2019<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script> Julia Dernovska & Vadym Horovyi. All rights reserved.
 
     </div>
 
   </div>
-  <!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <script type="text/javascript">
-    $(document).ready(function() {
-      var NavY = $('.navbar').offset().top;
-
-      var stickyNav = function() {
-        var Scrolly = $(window).scrollTop();
-
-        if (Scrolly > NavY) {
-          $('.navbar').addClass('sticky');
-        } else {
-          $('.navbar').removeClass('sticky');
-        }
-      };
-      stickyNav();
-      $(window).scroll(function() {
-        stickyNav();
-      });
-    });
-  </script>
+ 
+<script type="text/javascript" src="script.js"></script>
+  
 </body>
 
 </html>
