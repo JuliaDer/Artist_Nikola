@@ -26,3 +26,23 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
+
+// <!-- Приклеиваем навигацию к верхнему краю во время прокрутки вниз -->
+$(document).ready(function() {
+  var NavY = $('.navbar').offset().top;
+
+  var stickyNav = function() {
+    var Scrolly = $(window).scrollTop();
+
+    if (Scrolly > NavY) {
+      $('.navbar').addClass('sticky');
+    } else {
+      $('.navbar').removeClass('sticky');
+    }
+  };
+  stickyNav();
+  $(window).scroll(function() {
+    stickyNav();
+  });
+});
+
